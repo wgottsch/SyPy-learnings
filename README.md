@@ -1,2 +1,2 @@
 # SyPy-learnings
-Data Science, SyPy, Code-Snippet, Python, R
+Data Science, SciPy, Code-Snippet, Python, R
