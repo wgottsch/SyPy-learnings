@@ -8,7 +8,7 @@ def circle(perimeter, given_color):
     color(given_color)
     # circumference = perimeter * pi
     for i in range(perimeter):
-        forward(math.pi())
+        forward(3.1415)
         left(360.00 / perimeter)
 
 
@@ -125,9 +125,9 @@ def witdhConnection(perimeter, size_factor, witdh_color):
 
     # six directions
     for i in range(3):
-        forward(sqrt(((perimeter * 2.5) ** 2) + (sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
+        forward(math.sqrt(((perimeter * 2.5) ** 2) + (math.sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
         right(180 - 82)
-        forward(sqrt(((perimeter * 2.5) ** 2) + (sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
+        forward(math.sqrt(((perimeter * 2.5) ** 2) + (math.sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
         right(180 - 38)
 
     #align
@@ -144,9 +144,9 @@ def witdhConnection(perimeter, size_factor, witdh_color):
 
     # six directions
     for i in range(3):
-        forward(sqrt(((perimeter * 2.5) ** 2) + (sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
+        forward(math.sqrt(((perimeter * 2.5) ** 2) + (math.sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
         right(180 - 82)
-        forward(sqrt(((perimeter * 2.5) ** 2) + (sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
+        forward(math.sqrt(((perimeter * 2.5) ** 2) + (math.sqrt((perimeter ** 2) - ((0.5 * perimeter) ** 2)) ** 2)))
         right(180 - 38)
 
     #align
@@ -245,7 +245,7 @@ def MetatronsCube(perimeter, fruitFaktor, shifted):
 
 def stackedCube(perimeter, repetition, shifted):
 
-    #repetition = repetition
+    repetition = repetition
     for i in range(repetition):
         MetatronsCube(perimeter, i + 1, shifted)
 
@@ -275,7 +275,7 @@ repetition = 12
 perimeter = 12
 
 speed(10000)
-width(2)
+width(1)
 shifted = True
 
 
